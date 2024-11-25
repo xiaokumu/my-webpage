@@ -1,0 +1,153 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 确保页面至少占满整个视口的高度 */
+}
+
+/* 顶部导航 */
+.navbar {
+    background: #42b983; /* 绿色背景 */
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%; /* 确保容器宽度为100% */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px; /* 在logo和导航链接之间添加一些间隔 */
+}
+
+.navbar nav {
+    display: flex; /* 使用flex布局 */
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.navbar .search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* 调整搜索框和其他元素的间隔 */
+}
+
+.navbar .search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.navbar .search-box button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* 搜索框居中 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-box button {
+    width: 15%;
+    background-color: #42b983;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.search-box button:hover {
+    background-color: #369c6c;
+}
+
+/* 搜索提示部分 */
+.search-results {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.search-results h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.search-results p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* 自动将页脚推到页面底部 */
+}
+
+footer p {
+    font-size: 14px;
+}

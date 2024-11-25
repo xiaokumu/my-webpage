@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肖申克的救赎</title>
+    <link rel="stylesheet" href="css/movies介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html" class="active">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+    </header>
+
+    <!-- 电影详情页面 -->
+    <main class="movie-detail">
+        <section class="hero">
+            <h1>肖申克的救赎 (1994)</h1>
+            <p>导演：弗兰克·德拉邦特 | 主演：蒂姆·罗宾斯, 摩根·弗里曼</p>
+        </section>
+    
+        <section class="movie-content">
+            <div class="movie-poster">
+                <img src="../images/肖申克的救赎.jpg" alt="肖申克的救赎海报">
+            </div>
+            <div class="movie-description">
+                <h2>剧情简介</h2>
+                <p>
+                    《肖申克的救赎》是一部关于希望和自由的经典影片，讲述了银行家安迪因被冤枉谋杀妻子及其情人，被判终身监禁，送至肖申克监狱。在监狱中，他与狱友瑞德建立了深厚的友谊，并通过自己的智慧逐渐影响了监狱里的每一个人。他用自己的努力获得了尊重，并最终成功逃离监狱，实现了自我救赎。
+                </p>
+                <h3>影片亮点：</h3>
+                <ul>
+                    <li>深刻探讨了希望、友谊和自由的主题。</li>
+                    <li>感人至深的演技，蒂姆·罗宾斯和摩根·弗里曼的经典搭档。</li>
+                    <li>豆瓣评分：9.7，全球电影榜单中的长青之作。</li>
+                </ul>
+            </div>
+            <a id="explore-btn" class="btn-primary">返回电影</a>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../movies.html"; 
+    
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+     <!-- 相关推荐（其他相关书籍、电影等） -->
+     <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《肖申克的救赎》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《肖申克的救赎》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 电影推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

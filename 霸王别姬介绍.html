@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霸王别姬</title>
+    <link rel="stylesheet" href="css/movies介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html" class="active">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 电影详情页面 -->
+    <main class="movie-detail">
+        <section class="hero">
+            <h1>霸王别姬 (1993)</h1>
+            <p>导演：陈凯歌 | 主演：张国荣, 巩俐</p>
+        </section>
+        
+        <section class="movie-content">
+            <div class="movie-poster">
+                <img src="../images/霸王别姬.jpg" alt="霸王别姬海报">
+            </div>
+            <div class="movie-description">
+                <h2>剧情简介</h2>
+                <p>
+                    《霸王别姬》是一部具有深远影响力的经典影片，故事背景跨越了中国几十年的历史动荡。影片讲述了京剧伶人程蝶衣和段小楼从青少年到成年期间，面对艺术、感情和历史巨变的交织。程蝶衣对京剧的热爱和他对段小楼的情感纠葛，深刻表现了复杂的人性和时代的沉重。
+                </p>
+                <h3>影片亮点：</h3>
+                <ul>
+                    <li>深刻描绘了中国传统文化与历史变迁的交融。</li>
+                    <li>张国荣的精湛表演赋予了角色灵魂。</li>
+                    <li>荣获戛纳电影节金棕榈奖，成为华语电影的代表作。</li>
+                    <li>豆瓣评分：9.6，被誉为华语电影巅峰之作。</li>
+                </ul>
+            </div>
+            <a id="explore-btn" class="btn-primary">返回电影</a>
+        </section>
+
+        
+
+        <script>
+            // 固定链接
+            const fixedLink = "../movies.html"; 
+    
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《霸王别姬》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《霸王别姬》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 电影推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《呼啸山庄》书籍介绍</title>
+    <link rel="stylesheet" href="reading介绍.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html" class="active">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>《呼啸山庄》书籍介绍</h2>
+        
+        <!-- 书籍封面 -->
+        <img src="../images/呼啸山庄.jpg" alt="《呼啸山庄》封面" class="book-cover">
+
+        <p class="intro-text">
+            《呼啸山庄》是英国女作家艾米丽·勃朗特创作的唯一一部小说，首次出版于1847年。小说讲述了主人公希刺克厉夫的复仇故事，揭示了人性中的善恶与情感的复杂性。故事发生在荒凉的约克郡山庄，描绘了希刺克厉夫与凯瑟琳之间充满激情与痛苦的爱情。
+        </p>
+        <p class="intro-text">
+            《呼啸山庄》以其深刻的情感描写和对社会与道德的挑战，成为了英国文学史上的经典之作。小说中的爱情充满了摧残与挣扎，同时也展现了人性中无法抑制的激情和愤怒。这部作品反映了人类内心的黑暗面，以及对自由与命运的深刻思考。
+        </p>
+        <a id="explore-btn" class="btn-primary">返回书籍</a>
+    </section>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《呼啸山庄》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《呼啸山庄》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 固定链接
+        const fixedLink = "../reading.html"; 
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = fixedLink;
+    </script>
+</body>
+</html>

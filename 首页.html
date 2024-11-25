@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/首页.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="首页.html" class="logo">豆瓣</a>
+            <nav>
+                <a href="首页.html" class="active">首页</a>
+                <a href="reading.html">书籍</a>
+                <a href="movies.html">电影</a>
+                <a href="music.html">音乐</a>
+                <a href="more.html">更多</a>
+                <a href="search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 欢迎区域 -->
+    <section class="hero">
+        <h1>欢迎来到首页界面</h1>
+        <p>一起来探索乐趣吧！！！</p>
+    </section>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>关于我们</h2>
+        <p class="intro-text">
+            我们是一个致力于书籍、电影、音乐和小组讨论的社区。在这里，你可以找到丰富的资源，加入兴趣小组，并与他人一起分享你的见解。
+        </p>
+        <p class="intro-text">
+            请选择你感兴趣的内容，并开始探索我们的世界！通过我们的网站，你可以更轻松地发现自己喜欢的书籍、电影和音乐，结识志同道合的人，分享和交流心得。
+        </p>
+        <!-- 添加点击事件的按钮 -->
+        <a id="explore-btn" class="btn-primary" href="#">开始探索</a> 
+    </section>
+
+    <!-- 轮播图 -->
+    <section class="carousel">
+        <div class="carousel-item">
+            <img src="images/水浒传.jpg" alt="书籍1">
+            <p>《水浒传推荐》</p>
+        </div>
+        <div class="carousel-item">
+            <img src="images/霸王别姬.jpg" alt="电影1">
+            <p>《霸王别姬推荐》</p>
+        </div>
+        <div class="carousel-item">
+            <img src="images/《范特西》.jpg" alt="音乐1">
+            <p>《范特西专辑推荐》</p>
+        </div>
+    </section>
+
+    <!-- 推荐、用户推荐和最新动态整合 -->
+    <section class="recommendation-section">
+        <div class="recommendations">
+            <h2>热门推荐</h2>
+            <div class="recommendation-item">
+                <h3>书籍推荐</h3>
+                <p>发现一些你可能喜欢的书籍。</p>
+                <a href="reading.html">查看更多</a>
+            </div>
+            <div class="recommendation-item">
+                <h3>电影推荐</h3>
+                <p>看看最近热门的电影。</p>
+                <a href="movies.html">查看更多</a>
+            </div>
+            <div class="recommendation-item">
+                <h3>音乐推荐</h3>
+                <p>来听一些新的音乐作品。</p>
+                <a href="music.html">查看更多</a>
+            </div>
+        </div>
+        
+
+        <div class="user-recommendations">
+            <h2>用户推荐</h2>
+            <div class="recommendation-item">
+                <h3>书籍推荐：</h3>
+                <p>《书名》 —— 推荐理由</p>
+            </div>
+            <div class="recommendation-item">
+                <h3>电影推荐：</h3>
+                <p>《电影名》 —— 推荐理由</p>
+            </div>
+        </div>
+
+        <div class="latest-news">
+            <h2>最新动态</h2>
+            <div class="news-item">
+                <h3>最新活动标题</h3>
+                <p>活动简短描述...</p>
+                <a href="#">了解更多</a>
+            </div>
+            <div class="news-item">
+                <h3>新书推荐</h3>
+                <p>新书简短描述...</p>
+                <a href="#">查看详情</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 随机页面链接数组
+        const links = [
+            "reading.html", // 书籍页面
+            "movies.html",  // 电影页面
+            "music.html",   // 音乐页面
+            "groups.html",  // 小组页面
+            "more.html"     // 更多页面
+        ];
+
+        // 随机选择一个链接
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = randomLink; // 设置跳转的链接
+    </script>
+</body>
+</html>

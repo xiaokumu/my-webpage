@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《三国演义》书籍介绍</title>
+    <link rel="stylesheet" href="reading介绍.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html" class="active">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>《三国演义》书籍介绍</h2>
+        
+        <!-- 书籍封面 -->
+        <img src="../images/三国演义.jpg" alt="《三国演义》封面" class="book-cover">
+
+        <p class="intro-text">
+            《三国演义》是中国古代四大名著之一，由明代作家罗贯中创作。小说基于三国时期（公元184年—280年）的历史背景，讲述了魏、蜀、吴三国的兴亡和英雄人物之间的智勇较量。全书共120回，以英雄人物的传奇经历和历史事件为线索，塑造了诸葛亮、刘备、曹操、孙权等经典人物形象。
+        </p>
+        <p class="intro-text">
+            《三国演义》不仅描绘了战争与政治谋略，还探讨了人性的复杂和英雄主义的精神。书中众多英雄的悲剧命运和各方权力斗争，反映了中国古代政治与军事的智慧，以及忠诚、智慧、勇气和谋略的重要性。
+        </p>
+        <a id="explore-btn" class="btn-primary">返回书籍</a>
+    </section>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《三国演义》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《三国演义》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 固定链接
+        const fixedLink = "../reading.html"; 
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = fixedLink;
+    </script>
+</body>
+</html>

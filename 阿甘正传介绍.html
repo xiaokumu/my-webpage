@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿甘正传</title>
+    <link rel="stylesheet" href="css/movies介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html" class="active">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 电影详情页面 -->
+    <main class="movie-detail">
+        <section class="hero">
+            <h1>阿甘正传 (1994)</h1>
+            <p>导演：罗伯特·泽米吉斯 | 主演：汤姆·汉克斯, 罗宾·怀特</p>
+        </section>
+        
+        <section class="movie-content">
+            <div class="movie-poster">
+                <img src="../images/阿甘正传.jpg" alt="阿甘正传海报">
+            </div>
+            <div class="movie-description">
+                <h2>剧情简介</h2>
+                <p>
+                    《阿甘正传》是一部关于人生旅程的经典影片，讲述了主人公阿甘，一个智商仅75的普通人，以纯真的心态面对生活的起伏。他在美国历史的浪潮中，经历了无数传奇故事：从橄榄球明星到越战英雄，从虾业大亨到长跑奇迹。他始终坚守对爱、友情和梦想的执着信念，成为一个感动世界的传奇人物。
+                </p>
+                <h3>影片亮点：</h3>
+                <ul>
+                    <li>励志的故事情节，展现了生活的可能性。</li>
+                    <li>汤姆·汉克斯凭借本片荣获奥斯卡最佳男主角奖。</li>
+                    <li>豆瓣评分：9.5，激励人心的佳作。</li>
+                </ul> 
+            </div>
+            <a id="explore-btn" class="btn-primary">返回电影</a>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../movies.html"; 
+    
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《阿甘正传》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《阿甘正传》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 电影推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

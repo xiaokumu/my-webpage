@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣搜索</title>
+    <link rel="stylesheet" href="css/search.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="豆瓣.html">首页</a>
+                <a href="reading.html">书籍</a>
+                <a href="movies.html">电影</a>
+                <a href="music.html">音乐</a>
+                <a href="more.html">更多</a>
+                <a href="search.html" class="active">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 搜索框居中 -->
+    <section class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-query" placeholder="搜索书籍或电影...">
+            <button id="search-btn">🔍</button>
+        </div>
+    </section>
+
+    <!-- 搜索提示部分 -->
+    <section class="search-results">
+        <h2>搜索提示：</h2>
+        <p>请输入关键词进行搜索</p>
+        <p>本网站目前只支持搜索：</p>
+        <p>书籍类目：</p>
+        <p>红楼梦、西游记、 水浒传、三国演义、战争与和平、巴黎圣母院、童年、呼啸山庄、大卫·科波菲尔、红与黑</p>
+        <p>电影类目：</p>
+        <p>肖申克的救赎、霸王别姬、阿甘正传、这个杀手不太冷</p>
+        <p>音乐类目：</p>
+        <p>十年、范特西、忘情水、心太软、陈奕迅、周杰伦、刘德华、任贤齐</p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        document.getElementById("search-btn").addEventListener("click", function() {
+            const query = document.getElementById("search-query").value.trim().toLowerCase();
+
+            // 定义不同书籍对应的跳转页面
+            const bookLinks = {
+                "红楼梦": "reading/红楼梦介绍.html",
+                "西游记": "reading/西游记介绍.html",
+                "水浒传": "reading/水浒传介绍.html",
+                "三国演义": "reading/三国演义介绍.html",
+                "战争与和平": "reading/战争与和平介绍.html",
+                "巴黎圣母院": "reading/巴黎圣母院介绍.html",
+                "童年": "reading/童年介绍.html",
+                "呼啸山庄": "reading/呼啸山庄介绍.html",
+                "大卫·科波菲尔": "reading/大卫·科波菲尔介绍.html",
+                "红与黑": "reading/红与黑介绍.html"
+            };
+
+            // 电影跳转字典
+            const movieLinks = {
+                "肖申克的救赎": "movies/肖申克的救赎介绍.html",
+                "霸王别姬": "movies/霸王别姬介绍.html",
+                "阿甘正传": "movies/阿甘正传介绍.html",
+                "这个杀手不太冷": "movies/这个杀手不太冷介绍.html"
+            };
+
+            // 音乐跳转字典
+            const musicLinks = {
+                "十年": "music/陈奕迅专辑介绍.html",
+                "范特西": "music/周杰伦专辑介绍.html",
+                "忘情水": "music/刘德华专辑介绍.html",
+                "心太软": "music/任贤齐专辑介绍.html",
+                "陈奕迅": "music/陈奕迅专辑介绍.html",
+                "周杰伦": "music/周杰伦专辑介绍.html",
+                "刘德华": "music/刘德华专辑介绍.html",
+                "任贤齐": "music/任贤齐专辑介绍.html"
+            };
+
+            // 判断输入的关键词并跳转
+            if (bookLinks[query]) {
+                // 如果是书籍名称，跳转到书籍页面
+                window.location.href = bookLinks[query];
+            } else if (movieLinks[query]) {
+                // 如果是电影名称，跳转到电影页面
+                window.location.href = movieLinks[query];
+            } else if (musicLinks[query]) {
+                // 如果是音乐名称，跳转到音乐页面
+                window.location.href = musicLinks[query];
+            } else {
+                // 如果没有找到相关书籍、电影或音乐
+                alert("没有找到相关书籍、电影或音乐！");
+            }
+        });
+    </script>
+</body>
+</html>

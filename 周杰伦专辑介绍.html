@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周杰伦专辑</title>
+    <link rel="stylesheet" href="css/music介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html" class="active">音乐</a>
+                <a href="../more.html">更多</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索音乐...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专辑详情页面 -->
+    <main class="album-detail">
+        <section class="hero">
+            <h1>周杰伦 - 《范特西》 (2001)</h1>
+            <p>艺术家：周杰伦 | 类型：流行、R&B、嘻哈</p>
+        </section>
+        
+        <section class="album-content">
+            <div class="album-cover">
+                <img src="../images/《范特西》.jpg" alt="范特西专辑封面">
+            </div>
+            <div class="album-description">
+                <h2>专辑简介</h2>
+                <p>
+                    《范特西》是周杰伦于2001年发行的第二张专辑，也是他的成名之作之一。专辑融合了R&B、嘻哈、古典等多种音乐元素，展现了周杰伦独特的音乐风格。《爱在西元前》《双截棍》《简单爱》等经典歌曲奠定了他在华语乐坛的地位。
+                </p>
+                <h3>专辑亮点：</h3>
+                <ul>
+                    <li>融合东西方音乐元素，开创华语流行音乐新风格。</li>
+                    <li>多首经典金曲，广为传唱，如《双截棍》和《开不了口》。</li>
+                    <li>荣获多项音乐大奖，被誉为“华语音乐的革命性作品”。</li>
+                </ul>
+                <h3>热门曲目：</h3>
+                <ol>
+                    <li>爱在西元前</li>
+                    <li>爸，我回来了</li>
+                    <li>简单爱</li>
+                    <li>忍者</li>
+                    <li>开不了口</li>
+                    <li>上海一九四三</li>
+                    <li>双截棍</li>
+                </ol>
+                
+                <a id="explore-btn" class="btn-primary">返回音乐</a>
+            </div>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../music.html"; 
+    
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《红楼梦》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《红楼梦》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 音乐推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

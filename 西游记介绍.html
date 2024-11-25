@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《西游记》书籍介绍</title>
+    <link rel="stylesheet" href="reading介绍.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html" class="active">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>《西游记》书籍介绍</h2>
+        
+        <!-- 书籍封面 -->
+        <img src="../images/西游记.jpg" alt="《西游记》封面" class="book-cover">
+
+        <p class="intro-text">
+            《西游记》是中国古代四大名著之一，由明代作家吴承恩创作。它讲述了唐僧师徒四人—孙悟空、猪八戒、沙僧和白龙马—西天取经的传奇故事。全书共一百回，描绘了他们在取经过程中历经九九八十一难，最终成功取得真经的故事。
+        </p>
+        <p class="intro-text">
+            《西游记》不仅是一部奇幻小说，还富含丰富的哲理，充满了对人性、道德和社会的深刻反思。通过丰富多彩的神话元素和幽默的情节，展现了各式各样的神仙妖魔及其与人类的互动，成为了中国文学中的瑰宝。
+        </p>
+        <a id="explore-btn" class="btn-primary">返回书籍</a>
+    </section>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《西游记》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《西游记》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 固定链接
+        const fixedLink = "../reading.html"; 
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = fixedLink;
+    </script>
+</body>
+</html>

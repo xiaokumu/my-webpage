@@ -1,0 +1,190 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* 顶部导航 */
+.navbar {
+    background: #42b983; /* 绿色背景 */
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%; /* 确保容器宽度为100% */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px; /* 在logo和导航链接之间添加一些间隔 */
+}
+
+.navbar nav {
+    display: flex; /* 使用flex布局 */
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.navbar .search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* 调整搜索框和其他元素的间隔 */
+}
+
+.navbar .search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.navbar .search-box button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+/* 热门推荐标题区域 */
+.hero {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #42b983;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* 书籍列表 */
+.book-list {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.book {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.book p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.book a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.book a:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* 响应式设计：在小屏幕上每行显示 2 本书 */
+@media (max-width: 768px) {
+    .books {
+        gap: 15px;
+    }
+
+    .book {
+        width: 45%;
+    }
+}
+
+/* 响应式设计：在超小屏幕上每行显示 1 本书 */
+@media (max-width: 480px) {
+    .book {
+        width: 90%;
+    }
+}

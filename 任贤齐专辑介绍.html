@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任贤齐专辑</title>
+    <link rel="stylesheet" href="css/music介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html" class="active">音乐</a>
+                <a href="../more.html">更多</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索音乐...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专辑详情页面 -->
+    <main class="album-detail">
+        <section class="hero">
+            <h1>任贤齐 - 《心太软》 (1996)</h1>
+            <p>艺术家：任贤齐 | 类型：流行、华语</p>
+        </section>
+        
+        <section class="album-content">
+            <div class="album-cover">
+                <img src="../images/《心太软》.jpg" alt="心太软专辑封面">
+            </div>
+            <div class="album-description">
+                <h2>专辑简介</h2>
+                <p>
+                    《心太软》是任贤齐于1996年发行的一张经典专辑。这张专辑不仅让任贤齐成为华语乐坛的代表性歌手，还奠定了他的天王级地位。主打歌《心太软》更是红遍大江南北，成为当年KTV点播率最高的歌曲之一。
+                </p>
+                <h3>专辑亮点：</h3>
+                <ul>
+                    <li>旋律优美、歌词贴近生活，深受听众喜爱。</li>
+                    <li>主打歌《心太软》成为年度华语金曲，广为传唱。</li>
+                    <li>融合抒情与民谣风格，展现任贤齐的独特音乐魅力。</li>
+                </ul>
+                <h3>热门曲目：</h3>
+                <ol>
+                    <li>心太软</li>
+                    <li>对面的女孩看过来</li>
+                    <li>飞鸟</li>
+                    <li>永不退缩</li>
+                    <li>伤心太平洋</li>
+                    <li>浪花一朵朵</li>
+                    <li>一个人</li>
+                </ol>
+                
+                <a id="explore-btn" class="btn-primary">返回音乐</a>
+            </div>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../music.html"; 
+            
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《红楼梦》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《红楼梦》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 音乐推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘德华专辑</title>
+    <link rel="stylesheet" href="css/music介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html" class="active"></a>
+                <a href="../more.html">更多</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索音乐...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专辑详情页面 -->
+    <main class="album-detail">
+        <section class="hero">
+            <h1>刘德华 - 《忘情水》 (1994)</h1>
+            <p>艺术家：刘德华 | 类型：流行、华语</p>
+        </section>
+        
+        <section class="album-content">
+            <div class="album-cover">
+                <img src="../images/《忘情水》.jpg" alt="忘情水专辑封面">
+            </div>
+            <div class="album-description">
+                <h2>专辑简介</h2>
+                <p>
+                    《忘情水》是刘德华于1994年发行的一张经典专辑。这张专辑包含了众多脍炙人口的经典曲目，其中主打歌《忘情水》更是成为华语乐坛的标志性作品。通过深情的演绎和优美的旋律，刘德华再次巩固了其歌坛天王的地位。
+                </p>
+                <h3>专辑亮点：</h3>
+                <ul>
+                    <li>深情演唱，展现刘德华的独特嗓音和演绎风格。</li>
+                    <li>多首经典歌曲传唱度极高，如《忘情水》和《天意》。</li>
+                    <li>融合了抒情与流行风格，是90年代华语音乐的经典之作。</li>
+                </ul>
+                <h3>热门曲目：</h3>
+                <ol>
+                    <li>忘情水</li>
+                    <li>天意</li>
+                    <li>冰雨</li>
+                    <li>真我的风采</li>
+                    <li>谢谢你的爱</li>
+                    <li>来生缘</li>
+                    <li>缠绵</li>
+                </ol>
+                
+                <a id="explore-btn" class="btn-primary">返回音乐</a>
+            </div>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../music.html"; 
+            
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《红楼梦》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《红楼梦》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 音乐推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

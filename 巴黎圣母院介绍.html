@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《巴黎圣母院》书籍介绍</title>
+    <link rel="stylesheet" href="reading介绍.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html" class="active">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>《巴黎圣母院》书籍介绍</h2>
+        
+        <!-- 书籍封面 -->
+        <img src="../images/巴黎圣母院.jpg" alt="《巴黎圣母院》封面" class="book-cover">
+
+        <p class="intro-text">
+            《巴黎圣母院》是法国作家维克多·雨果创作的长篇小说，首次出版于1831年。故事发生在法国巴黎的巴黎圣母院，讲述了美丽的吉普赛女郎爱丝美拉达与钟楼怪人卡西莫多的悲惨爱情故事，以及由此引发的各种社会和政治冲突。
+        </p>
+        <p class="intro-text">
+            这部小说不仅是对人性、爱情和社会不公的深刻反思，还通过对巴黎圣母院的描述展现了法国哥特式建筑的辉煌与历史的重要性。雨果通过丰富的细节和对人物命运的细腻刻画，揭示了当时社会的复杂性，成为了世界文学史上的经典之作。
+        </p>
+        <a id="explore-btn" class="btn-primary">返回书籍</a>
+    </section>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《巴黎圣母院》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《巴黎圣母院》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 固定链接
+        const fixedLink = "../reading.html"; 
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = fixedLink;
+    </script>
+</body>
+</html>

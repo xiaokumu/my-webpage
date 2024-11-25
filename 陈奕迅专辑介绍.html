@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈奕迅专辑</title>
+    <link rel="stylesheet" href="css/music介绍.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">豆瓣</a>
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html" class="active">音乐</a>
+                <a href="../more.html">更多</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索音乐...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专辑详情页面 -->
+    <main class="album-detail">
+        <section class="hero">
+            <h1>陈奕迅 - 《十年》 (2003)</h1>
+            <p>艺术家：陈奕迅 | 类型：流行、粤语</p>
+        </section>
+        
+        <section class="album-content">
+            <div class="album-cover">
+                <img src="../images/《十年》.jpg" alt="十年专辑封面">
+            </div>
+            <div class="album-description">
+                <h2>专辑简介</h2>
+                <p>
+                    《十年》是陈奕迅在2003年推出的一张粤语专辑，以其深情的演绎和动人的旋律广受好评。专辑中包含了多首脍炙人口的金曲，如《十年》、《明年今日》，这些歌曲成为了粤语流行音乐的经典之作。
+                </p>
+                <h3>专辑亮点：</h3>
+                <ul>
+                    <li>陈奕迅细腻而真挚的情感表达。</li>
+                    <li>歌词与旋律完美结合，深刻打动人心。</li>
+                    <li>《十年》成为无数人对爱情与时间感慨的代名词。</li>
+                </ul>
+                <h3>热门曲目：</h3>
+                <ol>
+                    <li>十年</li>
+                    <li>明年今日</li>
+                    <li>葡萄成熟时</li>
+                    <li>烟味</li>
+                    <li>兄妹</li>
+                    <li>黑择明</li>
+                    <li>夜空中最亮的星（翻唱版）</li>
+                </ol>
+                
+                <a id="explore-btn" class="btn-primary">返回音乐</a>
+            </div>
+        </section>
+
+        <script>
+            // 固定链接
+            const fixedLink = "../music.html"; 
+            
+            // 获取按钮并设置其 href 属性
+            const exploreBtn = document.getElementById("explore-btn");
+            exploreBtn.href = fixedLink;
+        </script>
+    </main>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《红楼梦》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《红楼梦》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 音乐推荐网站 | 版权声明</p>
+    </footer>
+</body>
+</html>

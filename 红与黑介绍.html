@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《红与黑》书籍介绍</title>
+    <link rel="stylesheet" href="reading介绍.css"> <!-- 引入共用的CSS文件 -->
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 豆瓣 Logo -->
+            <a href="豆瓣.html" class="logo">豆瓣</a>
+            <!-- 导航栏 -->
+            <nav>
+                <a href="../豆瓣.html">首页</a>
+                <a href="../reading.html" class="active">书籍</a>
+                <a href="../movies.html">电影</a>
+                <a href="../music.html">音乐</a>
+                <a href="../more.html">更多</a>
+                <a href="../search.html">🔍搜索内容</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 网站的主要内容区域 -->
+    <section class="intro">
+        <h2>《红与黑》书籍介绍</h2>
+        
+        <!-- 书籍封面 -->
+        <img src="../images/红与黑.jpg" alt="《红与黑》封面" class="book-cover">
+
+        <p class="intro-text">
+            《红与黑》是法国作家司汤达创作的小说，首次出版于1830年。该书讲述了主人公于连·索雷尔的成长历程以及他在法国复辟时期的复杂人生，尤其是他在阶级与欲望、理想与现实之间的挣扎。小说深刻揭示了个人理想与社会现实之间的矛盾，并反映了法国社会的阶级斗争。
+        </p>
+        <p class="intro-text">
+            《红与黑》不仅是一部描写青年成长的小说，更是对法国复辟时期社会的深刻批判。司汤达通过细腻的心理描写与社会观察，展现了人性的复杂性，描写了政治、爱情、野心与背叛交织的命运。它被认为是19世纪欧洲文学的经典之一，影响深远。
+        </p>
+        <a id="explore-btn" class="btn-primary">返回书籍</a>
+    </section>
+
+    <!-- 相关推荐（其他相关书籍、电影等） -->
+    <section class="recommendations">
+        <h2>相关推荐</h2>
+        <div class="recommendation-item">
+            <h3>书籍推荐</h3>
+            <p>如果你喜欢《红与黑》，你可能也会喜欢这些书籍。</p>
+            <a href="../reading.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>电影推荐</h3>
+            <p>来看看改编自经典文学作品的电影。</p>
+            <a href="../movies.html">查看更多</a>
+        </div>
+        <div class="recommendation-item">
+            <h3>音乐推荐</h3>
+            <p>探索与《红与黑》相关的音乐作品。</p>
+            <a href="../music.html">查看更多</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 多媒体网站 | 版权声明</p>
+    </footer>
+
+    <script>
+        // 固定链接
+        const fixedLink = "../reading.html"; 
+
+        // 获取按钮并设置其 href 属性
+        const exploreBtn = document.getElementById("explore-btn");
+        exploreBtn.href = fixedLink;
+    </script>
+</body>
+</html>
